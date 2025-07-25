@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Website</title>
+    <link rel="stylesheet" href="style.css">    
+<body background="mn.jpeg">    
+    <header> 
+          
+        <img id="image"src="logo.jpeg" alt="logo" type="logo" weight="80px"height="80px">                   
+        <nav>          
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#books">Books</a><li>
+                <li><a href="#about">About</a><li>
+                <li><a href="#contact">Contact</a><li>                
+            </ul>            
+        </nav>                   
+            <div class="Search here">
+            <input type="text" placeholder="Search ....">
+            <Botton type="Submit"></Botton>
+        </div>        
+    </header>  
+    <hr>
+    <hr>  
+    <section id="Home">
+       
+    </section>
+    <section id="books">
+    <div class="A">
+           <div class="A-Content">
+             <h1>
+         Wel-Come To My Library 
+      </h1>
+            <br>
+            <hr>
+            <br>
+        </div>             
+        <div class="main-cintent">
+            
+            <h3> Characteristics</h3>
+            <div class="books">             
+                <div class="book">
+                    <img src="introduction.jpeg" height="300px" weidth="300px">
+                    <h3> introduction book</h3>
+                    <p> [BISWAJIT BANIK]</p>                    
+                </div>                                                              
+                <div class="book">
+                    <img src="oop.jpeg" height="300px" width="300px">
+                    <h3> OOP</h3>
+                    <p>[SWETA RAUT]</p>
+                </div>                                                                                                         
+                 <div class="book">
+                    <img src="JavaScript.jpeg" height="300px" width="250px"  >
+                    <h3> JavaScript</h3>
+                    <p> [EDIE CLEM]</p>
+            </div>          
+           <div class="book">
+                    <img src="computer.jpeg" height="300px" width="250px"  >
+                    <h3> DCN</h3>
+                    <p> [BEHROUZ.A.FOROUZAN]</p>
+            </div>
+           <div class="book">
+                    <img src="java.jpeg" height="300px" width="300px"  >
+                    <h3> Java</h3>
+                    <p> [TUSHAR.B.KUTE]</p>
+            </div>
+           <div class="book">
+                    <img src="story.jpeg" height="300px" width="250px"  >
+                    <h3> Nature</h3>
+                    <p> [NATURE ]</p>
+            </div>
+           <div class="book">
+                    <img src="Success.jpeg" height="300px" width="250px"  >
+                    <h3> Success</h3>
+                    <p> [J.C.CHAUDRY]</p>
+            </div>
+           <div class="book">
+                    <img src="horror.jpg" height="300px" width="300px"  >
+                    <h3> Horror Story</h3>
+                    <p> [HORROR BOOK]</p>
+            </div>
+           <div class="book">
+                    <img src="ab.jpeg" height="300px" width="250px"  >
+                    <h3> Abdul Kalam</h3>
+                    <p> [DR.A.P.J.ABDUL KALAM]</p>
+            </div>
+                                               
+            
+           
+           </div>          
+           <br>
+           <a href="" class="btn"> view all books</a>
+    </div>
+   </div>
+   <br>
+   </section>
+   
+       <section id="about" class="about-section">
+    <h1>About Us</h1>
+    <br>
+    <p>Bookstores sell books and book-adjacent items, of course. But they also may serve 
+        as editorial offices, publishing houses, classrooms, and lecture halls, not to mention 
+        cafés, play spaces, and reading rooms. Sites of collaboration and exchange, 
+        bookstores, like libraries, can help hold a community together. When you support 
+        local bookstores, you not only boost up the local economy, you also support their 
+        role as a safe haven, livelihood, and place to connect, because in the end, 
+        bookstores are not just shelves with books on them. The real heart of bookstores lies 
+        in the people that own, run, and use them.
+        Market Potential
+        India’s book market, currently worth Rs. 261 billon making it the sixth largest of the 
+        English language ones, is expected to touch Rs. 739 billion by 2020, says a survey.
+        The study estimates a CASR (compound annual growth rate) of 19.3 percent for the 
+        industry in the next five years. 
+    </p>
+  </section> 
+    <section id="contact">
+  <div class="contact-container">
+    <h1><b><b>Contact Us</b></b></h1>
+    <form onsubmit="send()"  class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+ 
+  </section>
+ 
+   <footer>
+       <p>2025 my bookstore</p>
+   </footer>  
+  
+   <script>
+    function send() {
+      var Name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var subject = document.getElementById("subject").value;
+      var message = document.getElementById("message").value;
+
+      
+      var url = "https://wa.me/919421551951?text=" 
+          + encodeURIComponent("Hello, my name is: " + Name + ". " +"email:"+ email +","+subject+","+message);
+
+
+      window.open(url, '_blank');
+    }
+    </script>
+</body>
+</html>
